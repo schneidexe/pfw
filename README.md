@@ -9,7 +9,7 @@ Just download the binary for your OS and arch from the [releases](https://github
 ```
 docker build -t pfw . && \
 docker run --name pfw pfw && \
-docker cp tpl:/go/src/github.com/schneidexe/pfw/bin . && \
+docker cp pfw:/go/src/github.com/schneidexe/pfw/bin . && \
 docker rm pfw && \
 docker rmi pfw
 
