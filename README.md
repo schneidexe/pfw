@@ -12,6 +12,7 @@ docker run --name pfw pfw && \
 docker cp pfw:/go/src/github.com/schneidexe/pfw/bin . && \
 docker rm pfw && \
 docker rmi pfw
+```
 
 ## test
 
