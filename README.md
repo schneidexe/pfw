@@ -7,13 +7,6 @@ Just download the binary for your OS and arch from the [releases](https://github
 
 ## build 
 ```
-docker build -t pfw . && \
-docker run --name pfw pfw && \
-docker cp pfw:/go/src/github.com/schneidexe/pfw/bin . && \
-docker rm pfw && \
-docker rmi pfw
+go get github.com/mitchellh/gox
+gox -arch="386 amd64" -os="darwin linux windows"
 ```
-
-## test
-
-tdb
